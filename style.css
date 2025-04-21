@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-image: linear-gradient(to right, rgb(251, 133, 151), rgb(151, 229, 255));
+    background-size: cover;
+    background-attachment: scroll;
+    color: #333;
+    border: solid;
+}
+header {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+}
+nav {
+    background-color: #333; 
+    padding: 10px; 
+    text-align: center;
+}
+a:visited {
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    text-decoration: none;
+    color: red;
+    background-color: transparent;
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff85, 
+    -40px 0 100px #e100ffbb;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+table{
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+section {
+    padding: 20px;
+}
+button {
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+button:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff85, 
+    -40px 0 100px #e100ffbb;
+}
+input {
+    padding: 1em 2em;
+    background-color: #f0f0f0;
+    border: none;
+    color: #161a20;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:visited {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+input:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff85, 
+    -40px 0 100px #e100ffbb; 
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+}
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px;
+}
